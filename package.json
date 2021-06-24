@@ -1,0 +1,17 @@
+{
+  "name": "widget",
+  "version": "1.0.0",
+  "description": "exercise for codelabs",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "codelabs.rocks"
+  ],
+  "author": "Bartosz Janiuk",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
