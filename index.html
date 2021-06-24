@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css//style.css" />
     <title>Widget Codelabs</title>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <div class="container">
@@ -13,10 +14,7 @@
         <div class="card__title">PEDRO'S WEEKLY GOAL</div>
         <div class="stripe">
           <div class="circle">
-            <img
-              src="https://share.merce.com/files/Hp8rrQ8jt.svg"
-              alt="svg image"
-            />
+            <img src="./icons//widget.svg" alt="svg image" />
             <div class="circle__content">
               <div class="circle__content__current">Current</div>
               <div class="circle__content__distance">38m</div>
@@ -25,18 +23,18 @@
           </div>
           <div class="right">
             <div class="right__info">
-              <strong>12</strong>
+              <span class="right__info__number">10</span>
               more mins. to achieve this <br />
               week's Goal
             </div>
 
             <div class="streak">
               <div class="streak__current">
-                <span><strong>4</strong></span>
+                <span class="streak__current__number"><strong>4</strong></span>
                 <span>Current Streak</span>
               </div>
               <div class="streak__best">
-                <span><strong>12</strong></span>
+                <span class="streak__best__number"><strong>12</strong></span>
                 <span>Best Streak</span>
               </div>
             </div>
@@ -46,12 +44,10 @@
         <div class="middle">
           <div class="middle__inner-left">LEADERBOARD</div>
           <div class="middle__inner-right">
-            <form>
-              <select class="select-list">
-                <option value="Week">Week</option>
-                <option value="Month">Month</option>
-              </select>
-            </form>
+            <select class="select-list">
+              <option value="Week">Week</option>
+              <option value="Month">Month</option>
+            </select>
           </div>
         </div>
 
@@ -59,7 +55,7 @@
           <div class="rectangle">
             <div class="rectangle__left">
               <span class="rectangle__number active">1</span>
-              <p class="rectangle__name">Walter Wynne</p>
+              <p class="rectangle__name"></p>
             </div>
             <div class="rectangle__right">
               <p class="rectangle__right__text">105m</p>
@@ -72,7 +68,7 @@
           <div class="rectangle">
             <div class="rectangle__left">
               <span class="rectangle__number">2</span>
-              <p class="rectangle__name">Annabel Ferdianand</p>
+              <p class="rectangle__name"></p>
             </div>
             <div class="rectangle__right">
               <p class="rectangle__right__text">52m</p>
@@ -85,7 +81,7 @@
           <div class="rectangle">
             <div class="rectangle__left">
               <span class="rectangle__number active">3</span>
-              <p class="rectangle__name">Marty McFly</p>
+              <p class="rectangle__name"></p>
             </div>
             <div class="rectangle__right">
               <p class="rectangle__right__text">50m</p>
@@ -98,7 +94,7 @@
           <div class="rectangle rectangle-active">
             <div class="rectangle__left">
               <span class="rectangle__number">7</span>
-              <p class="rectangle__name">You!</p>
+              <p class="rectangle__name"></p>
             </div>
             <div class="rectangle__right">
               <p class="rectangle__right__text">38m</p>
