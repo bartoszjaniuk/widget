@@ -6,6 +6,7 @@ const bestStreak = document.querySelector('.streak__best__number');
 const moreInfoNumber = document.querySelector('.right__info__number');
 const selectOption = document.querySelector('.select-list');
 const userNames = document.querySelectorAll('.rectangle__name');
+const circleGoal = document.querySelector('.circle__content__goal');
 
 const weekUsersList = [
   { id: 1, name: 'Walter Wynne' },
@@ -22,7 +23,7 @@ const monthUsersList = [
 ];
 
 const setData = (circle, current, best, moreInfo) => {
-  circleDistance.textContent = circle;
+  circleDistance.textContent = `${circle}m`;
   currentStreak.textContent = current;
   bestStreak.textContent = best;
   moreInfoNumber.textContent = moreInfo;
@@ -47,8 +48,10 @@ const handleChange = () => {
 selectOption.addEventListener('change', handleChange);
 
 (() => {
+  circleDistance.textContent = '38 m';
   userNames.forEach((name, index) => {
     name.textContent = weekUsersList[index].name;
   });
+  circleGoal.textContent = '50m Goal';
   console.log('Initial loading data 🚀');
 })();
