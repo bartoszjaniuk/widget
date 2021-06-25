@@ -47,6 +47,8 @@ const handleChange = () => {
 
 selectOption.addEventListener('change', handleChange);
 
+const test = document.getElementById('circle');
+
 (() => {
   circleDistance.textContent = '38 m';
   userNames.forEach((name, index) => {
