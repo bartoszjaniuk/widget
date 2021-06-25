@@ -7,8 +7,8 @@ body {
   font-weight: 500; }
 
 .container {
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -166,3 +166,31 @@ body {
     color: #fff; }
   .rectangle-active .icon {
     fill: #fff; }
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 280px;
+    margin: 0 40px; }
+  .circle__content__current {
+    color: #cfcfcf;
+    font-size: 11px; }
+  .circle__content__distance {
+    font-size: 1.3rem; }
+  .circle__content__goal {
+    font-size: 9px; }
+  .rectangle__name {
+    font-weight: 500;
+    margin-left: 10px;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px; }
+  .rectangle__right__text {
+    font-size: 12px; }
+  .right {
+    width: 70%; }
+  .streak__current {
+    font-size: 12px; }
+  .streak__best {
+    font-size: 12px; }
+  .right__info {
+    font-size: 12px; } }

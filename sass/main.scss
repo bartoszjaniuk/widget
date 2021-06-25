@@ -8,8 +8,8 @@ body {
 }
 
 .container {
-  width: 99vw;
-  height: 99vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,5 +215,61 @@ body {
 
   .icon {
     fill: #fff;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 280px;
+    margin: 0 40px;
+  }
+
+  .circle {
+    &__content {
+      &__current {
+        color: #cfcfcf;
+        font-size: 11px;
+      }
+
+      &__distance {
+        font-size: 1.3rem;
+      }
+
+      &__goal {
+        font-size: 9px;
+      }
+    }
+  }
+
+  .rectangle {
+    &__name {
+      font-weight: 500;
+      margin-left: 10px;
+      color: #444;
+      font-family: 'Roboto', sans-serif;
+      font-size: 12px;
+    }
+    &__right {
+      &__text {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .right {
+    width: 70%;
+  }
+
+  .streak {
+    &__current {
+      font-size: 12px;
+    }
+    &__best {
+      font-size: 12px;
+    }
+  }
+
+  .right__info {
+    font-size: 12px;
   }
 }
